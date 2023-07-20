@@ -1,0 +1,27 @@
+
+ input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked+span:before {
+    background-color: #2b2b2b;
+    border: 1px solid rgba(255, 255, 255, .4);
+    color: #fff;
+}
+
+ input[type=checkbox]+span:before {
+    content: "\2714";
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 0px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding-left: 3px;
+    margin-right: 6px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 300;
+}
