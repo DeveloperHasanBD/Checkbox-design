@@ -25,3 +25,52 @@ input[type=checkbox]:checked+span:before {
     font-size: 12px;
     font-weight: 300;
 }
+
+/* better design  */
+
+
+.footer_form_cbox span.wpcf7-list-item.first.last input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 14px;
+    height: 14px;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    margin-right: 8px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, .4) !important;
+}
+
+.footer_form_cbox input[type="checkbox"]:before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    background-color: #fff;
+}
+
+.footer_form_cbox input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+
+.footer_form_cbox span.wpcf7-list-item.first.last input[type="checkbox"]:after {
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
