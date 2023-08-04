@@ -1,5 +1,38 @@
+/* first  */
+input[type=checkbox]:checked+label:before {
+    background-color: #fff;
+    border-color: MediumSeaGreen;
+    color: #168e00;
+}
+input[type=checkbox]+label:before {
+    margin-top: 4px !important;
+}
+input[type=checkbox]+label:before {
+    content: "\2713";
+    border: 1px solid #000;
+    border-radius: 0px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding-left: 3px;
+    margin-right: 6px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+    line-height: 6px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: -19px !important;
+}
 
- input[type=checkbox] {
+/* end first  */
+ 
+
+
+
+
+
+input[type=checkbox] {
     display: none;
 }
 
